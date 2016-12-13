@@ -1,0 +1,37 @@
+/*应用下载轮播图CSS样式*/
+body,div,ul,li,a,img{margin: 0;padding: 0;}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+.wrapper{position: relative;
+    margin: 30px auto;
+    width: 1120px;
+    height: 460px;
+}
+.banner{width: 1120px;
+    height: 460px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+.imgList{width:1120px;
+    height:460px;
+    z-index: 10;}
+.imgList li{display: none;}
+.imgList .imgOn{display: inline;}
+.indexList{position: absolute;
+    left: 50%;
+    margin-left: -45px;
+    bottom: 5px;
+    z-index: 30;}
+.indexList li{float: left;
+    width: 3px;
+    height: 7px;
+    margin-right: 5px;
+    padding: 2px 4px;
+    border-radius:50%;
+    background: #ffffff;
+    cursor: pointer;}
+.indexList .indexOn{background: #666666;
+    font-weight: bold;
+    color: white;
+    opacity:0.5;}

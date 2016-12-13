@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>锤子手机T2页面</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/T2.css"/>
+    <script src="js/jquery-1.12.2.js"></script>
+    <script src="js/animate.js"></script>
+    <script>
+        $(function(){
+            $(window).scroll(function(){
+                var scrollTop=$(window).scrollTop();
+                var headHeight=$(".head").height();
+                if(scrollTop>headHeight){
+
+//                    $(".introduce").css({
+//                        "display":"none"
+//                    })
+                    $(".introduceplus").slideDown(1000)
+                    $(".introduceplus").css({
+                        "position":"fixed",
+                        "top":0,
+                        "left":"115px"
+                    })
+                    $(".main").css({
+                        "paddingTop":$(".introduceplus").height()
+                    })
+
+                    $(".section1 h3").fadeOut(1000)
+
+                }else{
+                    $(".introduceplus").css({
+                        "display":"none"
+                    })
+                    $(".main").css({
+                        "paddingTop":0
+                    })
+                    $(".section1 h3").fadeIn(1000)
+                }
+                $(".section4 .imgs .div").animate({
+                    "left":"10px"
+                })
+            })
+            $(".introduce").css({"position":"relative","zIndex":10})
+            $(".imgs").css({"position":"relative","zIndex":3,"left":150})
+
+            $(".imgs").children().css({"position":"absolute","zIndex":2})
+            var imgs=$(".imgs").children();
+            $.each(imgs,function(index,ele){
+                $(ele).css({
+                    "left":(index)*200
+                })
+            })
+            $(".section4 input").on("click",function(){
+
+                    for (i = 0; i < imgs.length; i++) {
+                        if (i > 2) {
+                            $(imgs[i]).animate({"left": i * 200 + (i - 2) * 30}, 1000, "swing");
+
+                        } else if (i < 2) {
+                            $(imgs[i]).animate({"left": i * 200 + (i - 2) * 30}, 1000, "swing")
+                        }
+
+                    }
+
+
+
+            })
+
+//            $("section3 img").animate({
+//                "width":1800,
+//                "height":700
+//            },1000,"swing")
+            var down=document.getElementById("down");
+            var lis=down.children;
+            var arr = document.getElementById("arrow");
+            var arrLeft = document.getElementById("arrLeft");
+            var arrRight = document.getElementById("arrRight");
+            var config = [
+                {
+                    "width": 400,
+                    "top": 20,
+                    "left": 50,
+                    "opacity": 0.2,
+                    "zIndex": 2
+                },//0
+                {
+                    "width": 600,
+                    "top": 70,
+                    "left": 0,
+                    "opacity": 0.8,
+                    "zIndex": 3
+                },//1
+                {
+                    "width": 800,
+                    "top": 120,
+                    "left": 200,
+                    "opacity": 1,
+                    "zIndex": 4
+                },//2
+                {
+                    "width": 600,
+                    "top": 70,
+                    "left": 600,
+                    "opacity": 0.8,
+                    "zIndex": 3
+                },//3
+                {
+                    "width": 400,
+                    "top": 20,
+                    "left": 750,
+                    "opacity": 0.2,
+                    "zIndex": 2
+                }]
+                $(".spec ul li").css({
+                    "position":"absolute"
+                })
+            $(".spec").on("mouseenter",function(){
+                $(".arrow").animate({
+                    "opacity":1
+            },100,"swing")
+            })
+            // 3. 鼠标离开大盒子的时候，隐藏左右按钮
+            $(".spec").on("mouseleave",function(){
+                $(".arrow").animate({
+                    "opacity":0
+                },100,"swing")
+            })
+            assign()
+            var flag=true;
+            function assign(){
+                for(var i=0;i<config.length;i++){
+                    animate(lis[i],config[i],function(){
+                        flag = true;
+                    });
+                }
+            }
+            arrRight.onclick = function(){
+                if(flag){
+                    flag =false;//
+                    config.push(config.shift());//将数组中的第一项删除，添加到数组的最后
+                    assign();// 根据新生成的数组配置文件重新渲染每个li
+                }
+            }
+            arrLeft.onclick = function(){
+                config.unshift(config.pop());// 删除数组中的最后一项，添加到数组的最前面
+                assign();//根据新生成的配置文件数组，重新让li走到指定的位置
+            }
+
+
+
+
+                })
+    </script>
+</head>
+<body>
+<div class="head"></div>
+<div class="introduce ">
+    <ul class="int_left fl">
+        <li><a href="#">概览</a></li>
+        <li><a href="#">设计</a></li>
+        <li><a href="#">功能</a></li>
+        <li><a href="#">操作系统</a></li>
+        <li><a href="#">技术规格</a></li>
+    </ul>
+    <input type="button" value="现在购买" class="fr buybtn"/>
+    <ul class="int_right fr">
+        <li><a href="#">优先购买码</a></li>
+        <li><a href="#">手机回收置换计划</a></li>
+    </ul>
+
+</div>
+<div class="int">
+    <div class="introduceplus ">
+        <div class="log fl">
+            <img src="images/smartisan-white_8c73a702e0.png" alt=""/>
+        </div>
+        <ul class="int_left fl">
+            <li><a href="#">概览</a></li>
+            <li><a href="#">设计</a></li>
+            <li><a href="#">功能</a></li>
+            <li><a href="#">操作系统</a></li>
+            <li><a href="#">技术规格</a></li>
+        </ul>
+        <input type="button" value="现在购买" class="fr buybtn"/>
+        <ul class="int_right fr">
+            <li><a href="#">优先购买码</a></li>
+            <li><a href="#">手机回收置换计划</a></li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="main">
+    <div class="section1 ac">
+        <div class="dec">
+            <h3 class="ac">以傲慢与偏执，回敬傲慢与偏见</h3>
+        </div>
+        <img src="images/heros-medium_1ac136b9ae.png" alt=""/>
+    </div>
+    <div class="section2">
+        <h3 class="ac">工程实现上的几小步，完美道路上的一大步</h3>
+        <p class="ac">“消失” 的电源键，“消失” 的 SIM 卡插槽，“消失” 的金属中框断点……
+            乔布斯和他的接班人都没为你做到的，我们为你做到了</p>
+        <h5 class="ac"><a href="#">进一步了解 Smartisan T2 的设计</a> </h5>
+            <div class="spec" id="spec">
+                <ul id="down">
+                    <li class="one"><a href="#"><img src="images/down1.png" alt=""/></a></li>
+                    <li class="two"><a href="#"><img src="images/down2.png" alt=""/></a></li>
+                    <li class="three"><a href="#"><img src="images/down3.png" alt=""/></a></li>
+                    <li class="four"><a href="#"><img src="images/down4.png" alt=""/></a></li>
+                    <li class="five"><a href="#"><img src="images/down5.png" alt=""/></a></li>
+                </ul>
+                <div class="arrow" id="arrow">
+                    <a href="javascript:;" class="prev" id="arrLeft"></a>
+                    <a href="javascript:;" class="next" id="arrRight"></a>
+                </div>
+            </div>
+    </div>
+    <div class="section3">
+        <img src="images/best-2-large_7c32fba105.png" alt=""/>
+    </div>
+    <div class="section4 ac">
+        <h3 class="ac">屡获殊荣的高差异化安卓操作系统，继续勇猛精进</h3>
+        <p class="ac">为什么语音功能做得再好，用它的人也还是那么少？</p>
+        <p class="ac"><a href="#" >进一步了解 Smartisan OS 更多新功能 </a></p>
+        <input type="button" value="点击试试看"/>
+        <div class="imgs">
+            <div class="one fl ac">
+                <img src="images/music-medium_64946a8f41.jpg" alt=""/>
+            </div>
+            <div class="two fl ac">
+                <img src="images/glass-theme-medium_c5df1dd1c7.jpg" alt=""/>
+            </div>
+            <div class="three fl ac">
+                <img src="images/vehicle-mode-medium_6f6a74189e.jpg" alt=""/>
+            </div>
+            <div class="four fl ac">
+                <img src="images/voice-search-medium_6c6dae48cb.jpg" alt=""/>
+            </div>
+            <div class="five fl ac">
+                <img src="images/remote-assistance-medium_18f1f3aa1e.jpg" alt=""/>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="fot_left fl">
+        <dl class="fl">
+            <dt>订单服务</dt>
+            <dd><a href="#">购买指南</a></dd>
+            <dd><a href="#">购买指南</a></dd>
+            <dd><a href="#">购买指南</a></dd>
+        </dl>
+        <dl class="fl">
+            <dt>订单服务</dt>
+            <dd><a href="#">购买指南</a></dd>
+            <dd><a href="#">购买指南</a></dd>
+            <dd><a href="#">购买指南</a></dd>
+        </dl>
+        <dl class="fl">
+            <dt>订单服务</dt>
+            <dd><a href="#">购买指南</a></dd>
+            <dd><a href="#">购买指南</a></dd>
+            <dd><a href="#">购买指南</a></dd>
+        </dl>
+        <dl class="fl">
+            <dt>订单服务</dt>
+            <dd><a href="#">购买指南</a></dd>
+            <dd><a href="#">购买指南</a></dd>
+            <dd><a href="#">购买指南</a></dd>
+        </dl>
+        <dl class="fl">
+            <dt>订单服务</dt>
+            <ddd><a href="#">购买指南</a></ddd>
+            <dd><a href="#">购买指南</a></dd>
+            <dd><a href="#">购买指南</a></dd>
+        </dl>
+    </div>
+    <div class="fot_right fr ar">
+        <h3 >400-619-0909</h3>
+        <p >周一至周日 9:00-18:00（仅收市话费)</p>
+        <input type="button" value="在线帮助" />
+    </div>
+</div>
+<div class="copyright">
+    <p>Copyright © 2016, Smartisan Digital Co., Ltd. All Rights Reserved.北京锤子数码科技有限公司
+       <a href="#">法律声明</a><a href="#">隐私条款</a><a href="#">开发者中心</a></p>
+    <p> 京ICP备14041720号-1京ICP证140622号京公网安备11010502025474</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+/*锤子科技动态CSS样式*/
+.min-banner{
+    margin-top: 40px;
+    overflow: hidden;
+}
+.min-banner .banner-1{
+    float: left;
+}
+.min-banner .banner-2{
+    float: right;
+}
+/*Сbanner css3����*/
+.min-banner .banner-1 img{
+    -webkit-transition: -webkit-transform 2s ease-in-out;
+    -moz-transition: -moz-transform 2s ease-in-out;
+    -ms-transition: -ms-transform 2s ease-in-out;
+}
+.min-banner .banner-1 img:hover{
+    transform: rotateX(1220deg);
+    -webkit-transform: rotateX(1220deg);
+    -moz-transform: rotateX(1220deg);
+    -ms-transform: rotateX(1220deg);
+    transform: rotateY(364deg);
+    -webkit-transform: rotateY(364deg);
+    -moz-transform: rotateY(364deg);
+    -ms-transform: rotateY(364deg);
+}
+.min-banner .banner-2 img{
+    -webkit-transition: -webkit-transform 2s ease-in-out;
+    -moz-transition: -moz-transform 2s ease-in-out;
+    -ms-transition: -ms-transform 2s ease-in-out;
+}
+.min-banner .banner-2 img:hover{
+    transform: rotateZ(-360deg);
+    -webkit-transform: rotateZ(-360deg);
+    -moz-transform: rotateZ(-360deg);
+    -ms-transform: rotateZ(-360deg);
+}
+/*���ӿƼ���̬��ʽ*/
+.technology .title-header{
+    margin-top: 36px;
+    font-size: 20px;
+    color: #666;
+    font-weight: 300;
+    display: block;
+    line-height: 1.2;
+}
+.title-header .title{
+    margin-left: 12px;
+    font-size: 100%;
+    font-weight: 600;
+}
+.technology .dynamic{
+    background: #fff;
+    overflow: hidden;
+    margin-top: 17px;
+    border-radius: 8px;
+    border: 1px solid #F2F2F2;
+    position: relative;
+}
+.technology .dynamic .dynamic-pic{
+    box-sizing: border-box;
+    height: 200px;
+    float: left;
+    width: 25%;
+    position: relative;
+    text-align: center;
+    border: 1px solid #F2F2F2;
+    overflow: hidden;
+}
+/*���ӿƼ����� css3����*/
+.technology .dynamic .dynamic-pic img{
+    width: 305px;
+    height: 100%;
+    -webkit-transform:scale(1);/*����2D���Ŵ�С-�ȸ�*/
+    -moz-transform:scale(1);/*����2D���Ŵ�С-���*/
+    -ms-transform:scale(1);/*����2D���Ŵ�С-IE*/
+    -webkit-transition-duration: 0.5s;/*��������ʱ��*/
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    opacity: 0.8;
+}
+.technology .dynamic .dynamic-pic img:hover{
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    box-shadow:0px 0px 30px gray;
+    -webkit-box-shadow:0px 0px 30px gray;
+    -moz-box-shadow:0px 0px 30px gray;
+    -ms-box-shadow:0px 0px 30px gray;
+    opacity: 1;
+}

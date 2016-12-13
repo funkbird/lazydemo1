@@ -1,0 +1,274 @@
+@-webkit-keyframes buzz-out {
+    0% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+    }
+    10% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+    }
+    20% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+    }
+    30% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+    }
+    40% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+    }
+    50% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+    }
+    60% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+    }
+    70% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+    }
+    80% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+    }
+    90% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+    }
+    100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+    }
+}
+.banner {
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+.shake:hover  {
+    -webkit-animation-name: buzz-out;
+    -webkit-animation-duration: 0.75s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+}
+
+
+
+
+.banner .banner-box{
+    height: 500px;
+    border: 1px solid #BFBFC0;
+    border-radius:8px;
+    overflow: hidden;
+    position: relative;
+}
+.banner .banner-box ul{
+    overflow: hidden;
+    position: absolute;
+}
+.banner .banner-box ul li {
+    width: 1220px;
+    height: 500px;
+    float: left;
+}
+.banner-box ol {
+    position: absolute;
+    left: 585px;
+    bottom: 30px;
+    line-height: 20px;
+    text-align: center;
+}
+.banner-box ol li{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-left: 10px;
+    border-radius: 50%;
+    /*position: relative;*/
+    background: #D8E3A9;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    float:left;
+}
+.banner-box ol li.current {
+    width: 10px;
+    height: 10px;
+    margin-top: -1px;
+    background: #ffffff;
+}
+.activity-panel .box{
+    height: 200px;
+    border: 1px solid #DBDBDB;
+    border-radius: 8px;
+    overflow:hidden;
+}
+.activity-panel .box ul li {
+    float: left;
+    width: 304px;
+    height: 200px;
+    border-left: 1px solid #F2F2F2;
+    position: relative;
+}
+.activity-panel .box ul li img {
+    width: 305px;
+    height: 200px;
+    position: absolute;
+}
+.big{
+    border: 1px solid #F2F2F2;
+    border-radius: 8px;
+    z-index: 2;
+}
+/*Smartisan App  ¿ªÊ¼*/
+.app-panel{
+    margin-top: 34px;
+}
+.app-panel .box{
+    height: 360px;
+    border: 1px solid #DBDBDB;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 100px;
+}
+.app-panel h2 {
+    height: 56px;
+    line-height: 56px;
+    font-size: 20px;
+}
+.app-panel h2 a {
+    font-family: Î¢ÈíÑÅºÚ;
+    font-size: 14px;
+}
+.app-panel h2 a span{
+    font-weight: 600;
+}
+.app-panel h2 a:hover{
+    color: #6b95ea;
+}
+.app-panel .box ul li {
+    width: 304px;
+    height: 360px;
+    float: left;
+    border-left: 1px solid #F2F2F2;
+    position: relative;
+}
+.app-panel .box ul li .app-image {
+    height: 150px;
+    position: relative;
+}
+.app-panel .box ul li img{
+    position: absolute;
+    bottom: 0;
+    left: 107px;
+}
+.app-panel .box ul li .infor{
+    margin-top: 40px;
+    height: 70px;
+    text-align: center;
+}
+.app-panel .box ul li .infor h6{
+    color: #424242;
+    font-size: 16px;
+}
+.app-panel .box ul li .infor p{
+    padding-top: 20px;
+    color: #B2B2B2;
+}
+.app-panel .box ul li .icon-android {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/icon-android.png);
+    margin-top: 30px;
+    margin-left: 145px;
+}
+.app-panel .box ul li .icon-ios1 {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/icon-ios.png);
+    margin-top: 30px;
+    margin-left: 145px;
+}
+.app-panel .box ul li .icon-ios {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/icon-ios.png);
+}
+.app-panel .box ul li .operation .qrcode{
+    height: 170px;
+    position: relative;
+}
+.app-panel .box ul li .operation .qrcode img{
+    left: 100px;
+}
+.app-panel .box ul li .operation{
+    text-align: center;
+    display: none;
+    /*background-color: #FBFBFB;*/
+    height: 360px;
+    box-shadow: 0 0 38px rgba(0,0,0,.08) inset;
+}
+.app-panel .box ul li .operation p{
+    margin-top: 35px;
+    color: #424242;
+    line-height: 1.2;
+}
+.app-panel .box ul li .operation a {
+    display: block;
+    padding-top: 20px;
+    color: #406dd6;
+}
+.app-panel .box ul li.handshaker .operation .txt,.qt{
+    display: block;
+    width: 208px;
+    height: 48px;
+    position: absolute;
+    top: 62px;
+    border: 1px solid #ccc;
+    background-color: #F9F9F9;
+    left: 50px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 48px;
+    color: #808080;
+}
+.app-panel .box ul li.handshaker .operation .qrcode1{
+    height: 210px;
+}
+.app-panel .box ul li.handshaker .operation .morep {
+    color: #BDBDBD;
+}
+.app-panel .box ul li.handshaker .operation .qrcode1 .qt{
+    font-family: Î¢ÈíÑÅºÚ;
+    text-align: left;
+    font-weight: 700;
+    top: 131px;
+    background-color: #666;
+    position: relative;
+}
+.app-panel .box ul li.handshaker .operation .qrcode1 .qt i.qt2{
+    display: inline-block;
+    font-size: 10px;
+    line-height: 10px;
+    width: 109px;
+    height: 30px;
+    position: absolute;
+    left: 62px;
+    top: 10px;
+    color: #D2D2D2;
+}
+.app-panel .box ul li.handshaker .operation .qrcode1 .qt:hover{
+    background-color: #333;
+}
+.app-panel .box ul li.handshaker .operation .txt:hover{
+    background-color: #ededed;
+}
+.app-panel .box ul li.handshaker .operation .qrcode1 .qt i.qt22{
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 16px;
+}
+.app-panel .box ul li.handshaker .operation .qrcode1 .qt i.qt3{
+    position: absolute;
+    top:0px;
+    right: 18px;
+    color: #E0E0E0;
+    /*font-family: Î¢ÈíÑÅºÚ;*/
+    font-weight: 700;
+}
+/*Smartisan App  ½áÊø*/

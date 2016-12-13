@@ -1,0 +1,253 @@
+.main {
+    /*position: absolute;*/
+}
+.navLadder {
+    width:40px;
+    border-radius: 20px;
+    border: 1px solid #EAEAEA;
+    background-color: #fff;
+    padding: 25px 0 25px 0;
+    position: fixed;
+    right: 24px;
+    top: 280px;
+    z-index: 999;
+}
+.navLadder li {
+    width: 16px;
+    height: 30px;
+    margin: 0 auto;
+    cursor: pointer;
+    position: relative;
+}
+.navLadder li span {
+    position: absolute;
+    top: -4px;
+    right: 40px;
+    height: 20px;
+    width: 110px;
+    padding: 0 5px 0 5px;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    background-color: #ccc;
+    /*opacity: .5;*/
+    text-align: right;
+    display: none;
+}
+.navLadder li i {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #D3D3D3;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.navLadder li.fgx {
+    border-top: 1px solid #EEEEEE;
+    height: 20px;
+}
+.navLadder li.weibo {
+    height: 37px;
+}
+.navLadder li.weibo s {
+    display: block;
+    background: url("../images/weibo_share_icon_05cc1bdf26.png") no-repeat ;
+    height: 14px;
+}
+.navLadder li.weichat {
+    background: url("../images/wechat_icon_a44b8ab367.png") no-repeat ;
+    height: 15px;
+}
+.describe{
+    background-color: #E6E6E6;
+    height: 1100px;
+}
+.content .p1 {
+    text-align: center;
+    font-size: 48px;
+    line-height: 45px;
+    padding: 100px 0 32px 0;
+    font-weight: 200;
+}
+.content .p2{
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgba(0,0,0,.4);
+}
+.content-lis {
+    height: 16px;
+    margin: 38px 0 200px 20px;
+    text-align: center;
+}
+.content-lis li{
+    float: left;
+    height: 100%;
+    width: 144px;
+    padding-top: 100px;
+}
+.content-lis li.li1{
+    background: url("../images/sprite1.png") no-repeat -40px 20px;
+}
+.content-lis li.li2{
+    background: url("../images/sprite1.png") no-repeat -180px 20px;
+}
+.content-lis li.li3{
+    background: url("../images/sprite1.png") no-repeat -330px 20px;
+}
+.content-lis li.li4{
+    background: url("../images/sprite1.png") no-repeat -467px 20px;
+}
+.content-lis li.li5{
+    background: url("../images/sprite1.png") no-repeat -612px 20px;
+}
+.content-lis li.li6{
+    background: url("../images/sprite1.png") no-repeat -756px 20px;
+}
+.content-lis li.li7{
+    background: url("../images/sprite1.png") no-repeat -906px 20px;
+}
+.content-lis li.li8{
+    background: url("../images/sprite1.png") no-repeat -1046px 20px;
+}
+.classical{
+    background-color:#1E1E20;
+    border-top: 1px solid #343436;
+    padding-top: 140px;
+    text-align: center;
+    overflow: hidden;
+    height: 1804px;
+}
+.classical .img-box{
+    width: 198px;
+    height: 222px;
+    margin: 0 auto;
+}
+.classical .pic {
+    width: 100%;
+}
+h3.mark {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+p.mark {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+.change-plate {
+    position: relative;
+}
+.phone {
+    position: absolute;
+    left: 50px;
+    top: 10px;
+}
+.viewbox {
+    width: 308px;
+    height: 546px;
+    position: absolute;
+    left: 125px;
+    top: 90px;
+    overflow: hidden;
+}
+.operation{
+    width: 3000px;
+    height: 546px;
+    position: absolute;
+}
+.operation li {
+    float: left;
+}
+.change-plate .sub-con {
+    position: absolute;
+    top: 200px;
+    right: 150px;
+}
+.viewbox-a {
+    width: 500px;
+    line-height: 30px;
+}
+.change-plate .sub-con a {
+    padding: 20px;
+}
+.message {
+    background-color: #fff;
+    padding-top: 100px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 1230px;
+}
+.message .img-box {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 40px;
+}
+.show-fun {
+    position: relative;
+    margin-top: 20px;
+}
+.message .sub-con {
+    position: absolute;
+    right: 300px;
+    top: 500px;
+    text-align: left;
+}
+.message .sub-con .content {
+    margin-bottom: 80px;
+}
+.message .sub-con h3 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.message .sub-con p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.tech {
+    background-color: #fff;
+    text-align: center;
+    height: 587px;
+}
+.tech .content {
+    border-top: 1px solid #ccc;
+    padding-top: 100px;
+
+}
+.fdj{
+    width: 270px;
+    height: 270px;
+    border: 1px solid #000;
+    /*overflow: hidden;*/
+    position: relative;
+}
+.fdj .small {
+    position: relative;
+    height: 270px;
+}
+.mask {
+    width: 135px;
+    height: 135px;
+    background-color: rgba(0, 255, 0, .5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    cursor: pointer;
+}
+.fdj .big {
+    width: 350px;
+    height: 350px;
+    border: 1px solid #000;
+    overflow: hidden;
+    position: absolute;
+    left: 280px;
+    top: 0;
+    display: none;
+}
+#bigImg {
+    position: absolute;
+}

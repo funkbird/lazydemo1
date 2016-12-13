@@ -1,0 +1,182 @@
+body{
+    background-color: #EDEDED;
+    font-size: 14px;
+}
+.hot-product{
+    width: 1212px;
+    margin:0 auto;
+    margin-top: 45px;
+    font-size:24px;
+    font-family: "Œ¢»Ì—≈∫⁄";
+    height: 40px;
+    padding-left: 10px;
+
+}
+.huangdunming .hot-pro{
+    background: #fff;
+    position: relative;
+    height: 860px;
+    z-index: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,.14);
+    box-shadow: 0 3px 8px -6px rgba(0,0,0,.1);
+    box-sizing: border-box;
+}
+.hot-pro>ul{
+    width: 1250px;
+}
+
+.hot-pro>ul>li{
+    float:left;
+    width: 305px;
+    height: 429px;
+    border-right:1px solid #DBDBDB;
+    border-bottom: 1px solid #DBDBDB;
+    background: #fff;
+    position: relative;
+}
+.hot-pro .lis0{
+    width: 611px;
+    height: 429px;
+}
+.hot-pro .sp{
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.05);
+    background: #faeae6;
+    color: #d8625d;
+    border: 1px solid #efbdb9
+box-sizing: border-box;
+    height: 28px;
+    line-height: 28px;
+    display: block;
+    border-radius: 14px;
+    font-size: 12px;
+    right: 20px;
+    width: 56px;
+    text-align: center;
+    position: absolute;
+    border: 1px solid #efbdb9;
+    top : 18px;
+}
+.shadow{
+    box-shadow: 0 0px 40px #EDEDED inset;
+}
+
+/*Õº∆¨∂®Œª*/
+.hot-pro>ul>li>img{
+    width: 206px;
+    height: 206px;
+    position: absolute;
+    top: 48px;
+    left:49px;
+}
+.hot-pro>ul>li .pro-name{
+    font-size: 16px;
+    width: 305px;
+    line-height: 1.2;
+    color: #000;
+    font-weight: 300;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: "Œ¢»Ì—≈∫⁄";
+    position: absolute;
+    top: 275px;
+    text-align: center;
+}
+.hot-pro>ul>li .pro-intro{
+    width: 305px;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #B2B2B2;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-top: 7px;
+    position: absolute;
+    top:300px;
+    text-align: center;
+    font-family: "Œ¢»Ì—≈∫⁄";
+}
+.hot-pro>ul>li:first-child .pro-intro{
+    color:#E04E4E;
+}
+.hot-pro>ul>li .pro-choice{
+    position: absolute;
+    width: 305px;
+    top: 340px;
+    text-align: center;
+}
+.hot-pro>ul>li .pro-choice ul{
+    display: inline-block;
+}
+.hot-pro>ul>li .pro-choice li{
+    float:left;
+    margin-left:15px;
+}
+.hot-pro>ul>li .pro-choice .box1{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    position:relative;
+    border:1px solid #EDEDED;
+    overflow: hidden;
+}
+.hot-pro>ul>li .pro-choice .box1 .box2{
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+    overflow: hidden;
+}
+.hot-pro>ul>li .pro-choice .box1 .box2 img{
+    margin-top: -2px;
+}
+/*º€∏Ò…Ë÷√*/
+.pro-price i,.pro-price span{
+    display:inline-block;
+}
+.pro-price{
+    position: absolute;
+    width: 305px;
+    top:380px;
+    color:#DE4037;
+    font-size: 18px;
+    text-align: center;
+}
+/*≤Èø¥œÍ«È º”»Îπ∫ŒÔ≥µ*/
+.pro-detail{
+    position: absolute;
+    top: 380px;
+    width: 305px;
+    text-align: center;
+    display:none;
+}
+.pro-detail input{
+    width: 100px;
+    height: 28px;
+    border-radius: 5px;
+    font-family: Œ¢»Ì—≈∫⁄;
+    cursor: pointer;
+}
+.pro-detail .btn1{
+    border:1px solid #EDEDED;
+    background-color: #fff;
+}
+.pro-detail .btn1:hover{
+    background-color: #eee;
+}
+.pro-detail .btn2{
+    border: 1px solid #5c81e3;
+    background: #678ee7;
+    color:white;
+    margin-left: 5px;
+}
+.pro-detail .btn2:hover{
+    background-color: #6c8cd4;
+    background-image: linear-gradient(180deg,#6c8cd4,#4769c2);
+    color:white;
+
+}

@@ -1,0 +1,281 @@
+html,body{width:100%;height:100%;}
+/*电梯开始*/
+.jianguo .dianti {
+    position: fixed;
+    right: 40px;
+    width: 10px;
+    height: 100px;
+    /*background-color: pink;*/
+    top: 50%;
+    list-style: none;
+    z-index: 120;
+    overflow: hidden;
+}
+.jianguo .dianti li {
+    margin: 10px 0;
+    width: 8px;
+    height: 8px;
+    /*display: block;*/
+}
+.jianguo .dianti li a {
+    position: relative;
+    width: 8px;
+    height: 8px;
+}
+.jianguo .dianti li a .span1{
+    position: absolute;
+    height: 6px;
+    cursor: pointer;
+    width: 6px;
+    left: 2px;
+    border-radius: 50%;
+    background: #6c6c6c;
+    opacity: 0.6;
+}
+.jianguo .dianti li a .span2{
+    position: absolute;
+    left: 10px;
+    top: -2px;
+    cursor: pointer;
+    width: 8px;
+    border-radius: 50%;
+    height: 8px;
+    z-index: 2;
+    border: #6c6c6c solid 1px;
+    background: #fff;
+    opacity: 0.6;
+}
+.rhythm {
+    width: 100%;
+    height: 677px;
+    position: relative;
+}
+.rhythm h3{
+    font-size: 49px;
+    font-weight: 200;
+    font-family: FZYouHJW;
+    color: #212121;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -170px;
+    z-index: 2;
+}
+.rhythm .select {
+    font-size: 20px;
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    margin-left: -125px;
+    color: #333;
+    cursor: pointer;
+    z-index: 2;
+    width: 250px;
+}
+.rhythm ul.rhythm-b {
+    height: 373px;
+    width: 1330px;
+    position: absolute;
+    left: 50%;
+    margin-left: -665px;
+    bottom: 0;
+    overflow: hidden;
+}
+.rhythm ul.rhythm-b li {
+    position: absolute;
+}
+.rhythm ul.rhythm-b li img {
+    width: 190px;
+}
+/*和谐一致的不像两个面  开始*/
+.hexie {
+    width: 1120px;
+    height: 677px;
+    margin: 0 auto;
+    position: relative;
+}
+.hexie h3 {
+    font-size: 49px;
+    font-weight: 100;
+    line-height: 1.42;
+    font-family: FZYouHJW;
+    color: #212121;
+    position: absolute;
+    top: 200px;
+    left: 5%;
+    z-index: 2;
+}
+.hexie h4 {
+    font-size: 25px;
+    font-weight: 200;
+    font-family: FZYouHJW;
+    color: #7399e5;
+    position: absolute;
+    top: 280px;
+    left: 5%;
+    z-index: 2;
+}
+.hexie .select {
+    font-size: 20px;
+    position: absolute;
+    top: 320px;
+    left: 5%;
+    color: #999;
+    cursor: pointer;
+    z-index: 2;
+    width: 315px;
+}
+.hexie .select li {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right:1px solid #999;
+}
+.hexie .select li.select-last{
+    border-right:none;
+}
+.hexie .yanse {
+    position: absolute;
+    left: 5%;
+    top: 350px;
+}
+.hexie .yanse ul {
+    width: 500px;
+    left: 5%;
+    display: none;
+}
+.hexie .yanse ul.biaozhun {
+    display: block;
+}
+.hexie .yanse li {
+    display: inline-block;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    background-color: red;
+}
+.phoneshow{
+    width: 600px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+}
+.phoneshow .topphone{
+    width: 450px;
+    position: absolute;
+    left: 0px;
+    top: -50px;
+    z-index: 2;
+}
+.phoneshow .bottomphone {
+    width: 350px;
+    position: absolute;
+    right: 80px;
+    bottom: -170px;
+}
+/*剽悍得不像偶像派  开始*/
+.piaohan {
+    width: 100%;
+    height: 677px;
+    position: relative;
+    overflow: hidden;
+}
+.piaohan .backgroundimage {
+    width: 1244px;
+    height: 356px;
+}
+.piaohan h3 {
+    font-size: 49px;
+    font-weight: 100;
+    line-height: 1.42;
+    font-family: FZYouHJW;
+    color: #212121;
+    position: absolute;
+    bottom: 200px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+.piaohan h4 {
+    font-size: 25px;
+    font-weight: 200;
+    font-family: FZYouHJW;
+    color: #7399e5;
+    position: absolute;
+    bottom: 140px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+.piaohan .videobox{
+    position: absolute;
+    top: -42px;
+    left: 235px;
+    -webkit-transform: matrix3d(.836353,.341328,0,-.0000578004,-.664692,.481513,0,-.000279751,0,0,1,0,170,-130,0,1);
+    transform: matrix3d(.836353,.325,0,-.0000578004,-.664692,.481513,0,-.000279751,0,0,1,0,170,-130,0,1);
+}
+/*流畅易用得不像安卓系统*/
+.liuchang {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+.liuchang h3 {
+    font-size: 49px;
+    font-weight: 100;
+    line-height: 1.42;
+    font-family: FZYouHJW;
+    color: #212121;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+.liuchang h4 {
+    font-size: 25px;
+    font-weight: 200;
+    font-family: FZYouHJW;
+    color: #7399e5;
+    position: absolute;
+    top: 50%;
+    margin-top: 80px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+.liuchang img{
+    width: 600px;
+    height: 1100px;
+}
+.liuchang img.leftimg {
+    position: absolute;
+    left: 0;
+    top: -250px;
+}
+.liuchang img.rightimg {
+    position: absolute;
+    right: 0;
+    top: -250px;
+}
+
+/*element.style {*/
+/*}*/
+/*@media screen and (max-height: 499px) and (min-height: 400px)*/
+    /*.overview .row-3 figure video {*/
+        /*-webkit-transform: matrix3d(.836353,.341328,0,-.0000578004,-.664692,.481513,0,-.000279751,0,0,1,0,170,-130,0,1);*/
+        /*transform: matrix3d(.836353,.341328,0,-.0000578004,-.664692,.481513,0,-.000279751,0,0,1,0,170,-130,0,1);*/
+    /*}*/
+    /*.overview .row-3 figure video {*/
+        /*height: 100%;*/
+        /*width: auto;*/
+        /*position: absolute;*/
+        /*left: 0;*/
+        /*right: 0;*/
+        /*top: 0;*/
+        /*margin: 0 auto;*/
+        /*-webkit-transform-origin: 0 0;*/
+        /*transform-origin: 0 0;*/
+    /*}*/
